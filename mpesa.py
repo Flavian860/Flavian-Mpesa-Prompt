@@ -72,7 +72,7 @@ if st.button("Send M-Pesa Prompt", type="primary"):
             "PartyB": business_shortcode,
             "PhoneNumber": payer_phone,
             "CallBackURL": "https://mydomain.com/callback",
-            "AccountReference": "ExpressPay",
+            "AccountReference": "Flavian Joshua",
             "TransactionDesc": payment_reason,
         }
 
@@ -90,16 +90,4 @@ if st.button("Send M-Pesa Prompt", type="primary"):
 
       except Exception as e:
         st.error(f"An error occurred: {e}")
-payload = {
-    "BusinessShortCode": business_shortcode,
-    "Password": encoded_password,
-    "Timestamp": timestamp,
-    "TransactionType": "CustomerPayBillOnline",
-    "Amount": int(payment_amount),
-    "PartyA": payer_phone,
-    "PartyB": business_shortcode,
-    "PhoneNumber": payer_phone,
-    "CallBackURL": "https://mydomain.com/callback",
-    "AccountReference": "Flavian Joshua",  # Change this to what you want displayed
-    "TransactionDesc": "Payment to Flavian",  # Change this description too
-}
+
